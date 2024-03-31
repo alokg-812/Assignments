@@ -1,0 +1,39 @@
+1. Exploratory Data Analysis of Customer Travel Preferences and Behaviours
+Objective:- The primary objective of this Exploratory Data Analysis (EDA) is to uncover
+insights into customer demographics, behaviours, and preferences within the context of travel
+product offerings. By investigating various aspects of the data, such as age distribution,
+contact type, city tier, occupation, and purchasing behaviour, the analysis aims to:
+A. What is the distribution of customerages, and how does age relate to product purchase
+(ProdTaken)?
+B. How does the type of contact(type of contact)influence the likelihood of purchasing a
+travel product?
+C. Is there a correlation between the city tier(citytier)and monthly income (monthly
+income) of customers?
+D. What is the average duration of a pitch (duration of pitch)for customers who
+purchased a product versus those who did not?
+E. How do occupation types(occupation)distribute among customers,and is there an
+occupation type that is more likely to purchase a travel product?
+F. Are there any gender-based preferences for the type of product pitched
+(ProductPitched)?
+G. What is the relationship between the number of trips(number of trips)taken by a
+customer and their likelihood to purchase a new travel product?
+H. Does having a passport(passport)correlate with a higher number of trips taken or a
+higher likelihood of purchasing a travel product?
+I. How satisfied are customers with the pitch (pitch satisfaction score),and does this
+satisfaction influence product purchase?
+J. Among customers with children (number of children visiting), how does the number
+of children impact travel product purchases?
+K. Gender preferences for product types: how does gender influence the preference for
+different types of travel products pitched (product pitched)?
+L. Impact of marital status on travel preferences: does marital status affect the choice of
+travel product, and if so, how do different marital statuses correlate with product
+purchases (prod taken)?
+M. Relationship between number of children and travel product interest: how does the
+number of children visiting (number of children visiting) impact the likelihood of
+purchasing a travel product?
+N. Influence of owning a car on travel decisions: is there a correlation between owning a
+car (own car) and the number of trips taken (number of trips) or the type of travel
+product purchased?
+O. Income level and product choice: how does the monthly income (monthly income) of
+customers influence their choice of travel products, and is there a preferred product
+for different income levels?
