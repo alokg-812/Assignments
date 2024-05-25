@@ -1,0 +1,43 @@
+Linked List (25 marks)
+
+• Implement the following functions for a singly linked list:
+
+    o Inserts an element at the specified index.
+    o Deletes the element at the specified index.
+    o Returns the size of the linked list.
+    o Returns true if the linked list is empty, false otherwise.
+    o Rotates the linked list by k positions to the right.
+    o Reverses the linked list.
+    o Appends an element to the end of the linked list.
+    o Prepends an element to the beginning of the linked list.
+    o Merges two linked lists into a single linked list.
+    o Interleaves two linked lists into a single linked list.
+    o Returns the middle element of the linked list.
+    o Returns the index of the first occurrence of the specified element in the linked list, or -1 if the element is not found.
+    o Splits the linked list into two linked lists at the specified index.
+
+
+Dynamic Arrays (15 marks)
+• Implement the following methods for a dynamic array:
+    o Inserts an element at the specified index.
+    o Deletes the element at the specified index.
+    o Returns the size of the dynamic array.
+    o Returns true if the dynamic array is empty, false otherwise.
+    o Rotates the dynamic array by k positions to the right.
+    o Reverses the dynamic array.
+    o Appends an element to the end of the dynamic array.
+    o Prepends an element to the beginning of the dynamic array.
+    o Merges two dynamic arrays into a single dynamic array.
+    o Interleaves two dynamic arrays into a single dynamic array.
+    o Returns the middle element of the dynamic array.
+    o Returns the index of the first occurrence of the specified element in the dynamic array, or -1 if the element is not found.
+    o Splits the dynamic array into two dynamic arrays at the specified index.
+    o Resizing the arrays with custom factor given by user (other than 2)
+
+
+Comparison of Linked Lists and Dynamic Arrays (10 marks)
+• Compare the following aspects of linked lists and dynamic arrays:
+    o Time complexity of each method
+    o Space complexity of each method
+    o Advantages and disadvantages of each data structure
+• Create a report on comparison of both of them
