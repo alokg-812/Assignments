@@ -204,7 +204,6 @@ public:
 };
 
 int main() {
-    // Example usage
     SinglyLinkedList list;
     list.append(1);
     list.print_list();
