@@ -1,29 +1,37 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-
+import joblib  # or import pickle
+import numpy as np
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS so your frontend can communicate with backend
+CORS(app)
+
+# Load your trained model
+model = joblib.load('../../Notebook/best_xgb_model.pkl')
+# Use pickle.load(open(...)) if you used pickle
 
 @app.route('/predict', methods=['POST'])
+# @app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json()
-    
-    # For now, just print to console to see what we get
-    print("Received data:", data)
-    
-    # Dummy prediction: just add bedrooms * 100000 + bathrooms * 50000 + living_area * 2000
+
+    # Extract features
     bedrooms = data.get('bedrooms', 0)
     bathrooms = data.get('bathrooms', 0)
     living_area = data.get('living_area', 0)
-    
-    predicted_price = bedrooms * 100000 + bathrooms * 50000 + living_area * 2000
-    
-    return jsonify({"predicted_price": predicted_price})
+    zipcode = data.get('zipcode', 0)
+    location = data.get('location', '')
 
-@app.route('/')
-def home():
-    return "Flask backend is running!"
+    # Arrange features in correct order your model expects
+    # Example: [bedrooms, bathrooms, living_area, zipcode, location]
+    # Adjust this line according to how your model was trained
+    features = np.array([[bedrooms, bathrooms, living_area, int(zipcode)]])
+
+    # Predict
+    predicted_price = model.predict(features)[0]
+
+    return jsonify({"predicted_price": round(predicted_price, 2)})
+
 
 if __name__ == '__main__':
     app.run(debug=True)
